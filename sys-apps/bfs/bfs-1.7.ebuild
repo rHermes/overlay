@@ -18,8 +18,6 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
-IUSE="test"
-
 PATCHES=(
 	"${FILESDIR}/disable-deep-tests.patch"
 )
