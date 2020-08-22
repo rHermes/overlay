@@ -1,0 +1,57 @@
+diff --git a/tests.sh b/tests.sh
+index 4b0771e..e986f4d 100755
+--- a/tests.sh
++++ b/tests.sh
+@@ -245,7 +245,7 @@ posix_tests=(
+     test_closed_stderr
+ 
+     # PATH_MAX handling
+-    test_deep
++    # test_deep
+ 
+     # Optimizer tests
+     test_or_purity
+@@ -348,10 +348,10 @@ bsd_tests=(
+     test_newermt_epoch_minus_one
+ 
+     test_nogroup
+-    test_nogroup_ulimit
++    # test_nogroup_ulimit
+ 
+     test_nouser
+-    test_nouser_ulimit
++    # test_nouser_ulimit
+ 
+     test_ok_stdin
+     test_ok_closed_stdin
+@@ -498,10 +498,10 @@ gnu_tests=(
+     test_newermt_epoch_minus_one
+ 
+     test_nogroup
+-    test_nogroup_ulimit
++    # test_nogroup_ulimit
+ 
+     test_nouser
+-    test_nouser_ulimit
++    # test_nouser_ulimit
+ 
+     test_ok_closed_stdin
+     test_ok_nothing
+@@ -531,7 +531,7 @@ gnu_tests=(
+     test_printf_nul
+     test_printf_Y_error
+     test_printf_H
+-    test_printf_u_g_ulimit
++    # test_printf_u_g_ulimit
+ 
+     test_quit
+     test_quit_child
+@@ -663,7 +663,7 @@ bfs_tests=(
+     test_xtype_reorder
+ 
+     # PATH_MAX handling
+-    test_deep_strict
++    # test_deep_strict
+ )
+ 
+ sudo_tests=(
