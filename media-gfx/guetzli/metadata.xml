@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>teodor_spaeren@riseup.net</email>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">google/guetzli</remote-id>
+		<bugs-to>https://github.com/google/guetzli/issues</bugs-to>
+		<changelog>https://github.com/google/guetzli/releases</changelog>
+	</upstream>
+</pkgmetadata>
