@@ -530,9 +530,10 @@ go-module_set_globals
 
 DESCRIPTION="Open Source Continuous File Synchronization"
 HOMEPAGE="https://syncthing.net"
-SRC_URI="https://github.com/${PN}/${PN}/archive/v1.9.0-rc.5.tar.gz -> ${P}.tar.gz
+MY_P="1.9.0-rc.5"
+SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_P}.tar.gz -> ${P}.tar.gz
 	${EGO_SUM_SRC_URI}"
-S="${WORKDIR}/${PN}-1.9.0-rc.5"
+S="${WORKDIR}/${PN}-${MY_P}"
 
 LICENSE="Apache-2.0 BSD BSD-2 ISC MIT MPL-2.0 Unlicense"
 SLOT="0"
@@ -569,7 +570,7 @@ src_prepare() {
 }
 
 src_compile() {
-	go run build.go -version "v${PV}" -no-upgrade install \
+	go run build.go -version "v${MY_P}" -no-upgrade install \
 		$(usex tools "all" "") || die "build failed"
 }
 
